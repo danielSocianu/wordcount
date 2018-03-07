@@ -1,0 +1,7 @@
+<h1>This is your {{count}} wwords text you entered</h1>
+<a href="{% url 'home'%}">Start a new search</a>
+<br/>
+{% for word, numar in word_dict%}
+    {{word}} = {{numar}}
+    <br/>
+{%endfor%}
